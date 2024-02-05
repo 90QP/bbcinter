@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color:#404040
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 범용 클래스 설정 */
+.container {
+  width: 1008px;
+  margin: auto;
+}
+
+.global-width {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* 헤더 */
+.header_top {
+  height: 40px;
+}
+.header_top h1 {
+  float:left;
+  padding-top: 8px;
+  width: 92px;
+}
+.header_top nav {
+  float:left;
+  height: 40px;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+.header_top nav a {
+  display: block;
+  height: 40px;
+  padding: 10px 20px 0 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.header_top nav a span:first-child { margin-right: 30px;}
+.header_top nav a span:last-child {
+  font-size:7px;
+}
+
+
+.news_banner {
+  height: 38px;
+  background-color: #BB1919;
+}
+.news_banner img {
+  height: 20px;
+  margin-top: 9px;
+}
+
+/* 본문 1 ( 재택근무의 일상화 ) */
+.header_txt {
+  padding: 0 1rem;
+}
+
+.page-title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 1.2rem 0;
+  letter-spacing: -0.5px;
+}
+
+.story-timestamp {
+  font-size:0.875rem;
+}
+.timestamp {
+  background: url('../img/timestamp.svg') no-repeat left -7px / 2.5rem ;
+  padding-left: 33px;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #ccc;
+}
+.story-timestamp a { 
+  color:#bb1919; 
+  font-weight: 500;
+}
+.header_txt p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1.8rem;
+}
+
+
+/* 스크롤 콘텐츠 */
+
+.scroll-graphic {
+  position: sticky;
+  top:0;
+  height: 100vh;
+}
+
+.graphic-item {
+  position: absolute;
+  left:0;
+  top:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease-in;
+  overflow: hidden;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.scene-img {
+  max-height: 100vh;
+}
+
+.scroll-text {
+  position: relative;
+  letter-spacing: 0.05rem;
+  max-width: 31rem;
+  padding-bottom:1px;
+}
+
+.step { /* 말풍선 */
+  padding:1.5rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 60vh;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 0 3px rgba(0,0,0,0.5)
+}
+
+
+/* 새 추가 */
+.bird {
+  position: absolute;
+  left:0;
+  bottom:70%;
+  width:100px;
+  transform: translateX(-100%);
+  transition: 1s ease-in;
+}
+
+/* 두번째 새 */
+[data-index="5"] .bird {
+  left:10%;
+  bottom:10%
+}
+
+
+/* 푸터 */
+.footer-text h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1.2rem;
+  letter-spacing: 0.25px;
+}
+.footer-text p {
+  line-height: 1.5;
+  margin: 1.5rem 0;
+  
+}
+.footer-text br {
+  display: block;
+  content: "";
+  padding: 10px 0;
+}
